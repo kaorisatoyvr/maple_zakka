@@ -1,0 +1,45 @@
+{
+  "name": "sage",
+  "private": true,
+  "browserslist": [
+    "extends @roots/browserslist-config"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "bud dev",
+    "build": "bud build",
+    "watch:scss": "onchange 'src/**/*.scss' -- npm run build:scss",
+    "translate": "npm run translate:pot && npm run translate:update",
+    "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"theme.json,patterns,app,resources\"",
+    "translate:update": "for file in ./resources/lang/*.po; do wp i18n update-po ./resources/lang/sage.pot $file; done",
+    "translate:compile": "npm run translate:mo && npm run translate:js",
+    "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
+    "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang",
+    "start": "webpack --watch"
+  },
+  "devDependencies": {
+    "@roots/bud": "^6.21.0",
+    "@roots/bud-sass": "^6.21.0",
+    "@roots/bud-tailwindcss": "^6.21.0",
+    "@roots/sage": "^6.21.0",
+    "onchange": "^7.1.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@roots/bud-framework": "^6.21.0",
+    "@roots/bud-hooks": "^6.21.0",
+    "@roots/bud-postcss": "^6.21.0",
+    "@roots/bud-preset-recommend": "^6.21.0",
+    "@roots/bud-preset-wordpress": "^6.21.0",
+    "@roots/bud-react": "^6.21.0",
+    "@roots/bud-support": "^6.6.6",
+    "@roots/bud-wordpress-theme-json": "^6.21.0",
+    "@roots/wordpress-hmr": "^6.21.0",
+    "@wordpress/data": "^10.0.0",
+    "@wordpress/hooks": "^4.0.0",
+    "file-loader": "^6.2.0"
+  }
+}

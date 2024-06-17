@@ -1,0 +1,10 @@
+// cart page
+.page-id-9 {
+    // proceed to checkout button
+    .wc-block-cart__submit-container {
+        a {
+            @include pink_btn
+        }   
+    }
+    
+}

@@ -1,0 +1,74 @@
+.product-type-simple {
+    header {
+        span, p {
+            display: none;
+        }
+    }
+}
+
+// add cart button
+.woocommerce div.product form.cart .button {
+    color: $color-darkgray;
+    @include pink_btn
+}
+
+.woocommerce ul.products li.product .button {
+    color: $color-darkgray;
+    @include pink_btn
+}
+
+//  Price color
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product p.price, .woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product span.price {
+    color: $color-darkgray;
+    font-size: 1.5rem;
+}
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) ul.products li.product .price {
+    color: $color-darkgray;
+}
+
+// stock color
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product .stock {
+    color: tomato;
+}
+
+.woocommerce-product-details__short-description p {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+// sale sign
+.woocommerce span.onsale {
+    background: tomato;
+    border: 1px solid #43454b;
+    border-radius: 4px;
+    color: $color-darkgray;
+    display: inline-block;
+    font-size: .875em;
+    font-weight: 600;
+    left: auto;
+    padding: 0 .75em;
+    position: absolute;
+    right: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 4px;
+    width: auto;
+    z-index: 9;
+}
+
+time.dt-published {
+    display: none;
+}
+
+.h-entry .product .type-product {
+    header {
+        p span {
+            display: none;
+        }
+    }
+}
+
+.comment-respond {
+    display: none;
+}

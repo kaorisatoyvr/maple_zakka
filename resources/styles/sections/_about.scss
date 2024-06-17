@@ -1,0 +1,16 @@
+.page-id-19 {
+    .wp-block-cover, .wp-block-cover-image {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    p {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    @media (min-width: 768px) {
+        .wp-block-cover, .wp-block-cover-image {
+            width: 70%;
+        }
+    }
+}

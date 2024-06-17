@@ -1,0 +1,27 @@
+.contact_content {
+    @apply mb-10 mx-2 text-center md:mx-5;
+    p {
+        text-align: left;
+    }
+}
+
+.wpcf7-form {
+    // margin: .5rem auto;
+    input {
+        width: 100%;  /* Make the form full width */
+        max-width: 300px;  /* Set a max-width for the form */
+        margin: .5rem auto;  /* Center the form */
+    }
+    textarea {
+        width: 100%;  /* Make the form full width */
+        max-width: 1000px;  /* Set a max-width for the form */
+        margin: .5rem auto; 
+    }
+    .wpcf7-form-control {
+        
+        @apply bg-beige min-h-8 rounded-sm mb-7;
+    }
+    .wpcf7-submit {
+        @apply w-fit p-3 px-5 bg-primary rounded-full;
+    }
+}

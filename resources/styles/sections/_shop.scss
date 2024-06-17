@@ -1,0 +1,29 @@
+.wp-element-button, .wp-block-button__link {
+    background-color: #E9C2B7;
+    color: #333333;
+}
+
+// products margin reset
+.wc-block-grid__products  {
+    margin: 0;
+}
+
+/* hero image add max-width */
+.wp-block-image {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+}
+
+.full-width-featured-image img {
+    width: 100%;
+    height: auto;
+}
+
+.page-header {
+    display: none;
+}

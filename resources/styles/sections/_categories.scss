@@ -1,0 +1,94 @@
+/* category buttons */
+.category_btn {
+    position: sticky;
+    top: 3.75rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem .25rem;
+    gap: .25rem;
+}
+
+.category_btn a {
+    text-decoration: none!important;
+    color: #333333;
+    font-size: 0.75rem;
+    scroll-behavior: smooth;
+}
+
+.category_btn div {
+    width: fit-content;
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+    rgba(239,215,163,1) 0%, rgba(251,243,228,1) 53%);
+    border-radius: 5px;
+    padding: 0 .5rem;
+    box-shadow: 0 1px 3px #d4d4d4;
+    z-index: 999;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget a.button {
+    border-radius: 5px;
+}
+
+/* category button after scrolling 400px */
+#fixed-element {
+    z-index: 9;
+}
+
+.fixed {
+    position: fixed;
+    top: 66px;
+    left: 50%; /* Move the element's left edge to the center of the viewport */
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #ffffffc0;
+    padding: .5rem 0;
+    margin: 0 auto;
+}
+
+.wp-block-heading {
+    scroll-margin-top: 9rem;
+}
+
+@media (min-width: 768px) {
+    .fixed {
+        top: 120px;
+        padding: 1rem;
+        width: 1000px;
+    }
+    .category_btn {
+        gap: 1.5rem;
+    }
+    .category_btn a {
+        font-size: 1rem;
+    }
+    .category_btn div {
+        padding: .25rem .5rem;
+    }
+    .wp-block-heading {
+        scroll-margin-top: 230px;
+    }
+}
+
+.category_btn div::before {
+    position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background-image: linear-gradient(
+	    to left,
+    rgba(239,215,163,1) 0%, rgba(251,243,228,1));
+    border-radius: 5px;
+    padding: .5rem;
+    color: #333333;
+    transition: opacity 0.3s linear;
+	opacity: 0;
+    z-index: -1;
+}
+
+.category_btn div:hover::before {
+    opacity: 1;
+}

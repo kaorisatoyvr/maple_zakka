@@ -1,0 +1,21 @@
+.gt_switcher_wrapper {
+    top: 0;
+    left: 0;
+    width: 60px;
+}
+
+.brand {
+    img {
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+.nav-primary {
+    ul {
+        @apply flex gap-10 justify-center;
+    }
+}
+
+.wc-block-grid .wc-block-grid__product-onsale {
+    background-color: tomato;
+}

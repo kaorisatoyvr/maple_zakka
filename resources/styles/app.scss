@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "navigation/navigation";
+@import "base/base";
+@import 'base/variables';
+@import "mixins/mixins";
+@import "sections/header";
+@import "sections/categories";
+@import "sections/_single-product";
+@import "sections/contact";
+@import "sections/404";
+@import "sections/faq";
+@import "sections/about";
+@import "sections/shop";
+@import "sections/footer";
+@import "sections/my-account";
+@import "sections/cart";
+@import "sections/checkout";
+
+

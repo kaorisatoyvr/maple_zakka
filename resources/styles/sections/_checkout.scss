@@ -1,0 +1,10 @@
+.page-id-10  {
+    .wc-block-components-product-metadata {
+        p {
+            display: none;
+        }
+    }
+    .wc-block-components-button:not(.is-link) {
+        @include pink_btn;
+    }
+}

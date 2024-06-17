@@ -1,0 +1,68 @@
+.page-id-11 {
+    main {
+        a {
+            text-decoration: underline;
+            color: purple;
+        }
+        p {
+            font-size: 1rem;
+            padding: 2rem 0;
+        }
+        margin: 2rem auto;
+        .woocommerce {
+            padding: 2rem;
+        }
+        .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+            max-width: 600px;
+            margin: 0 auto;
+            input {
+                background-color: lightgray;
+                height: 50px;
+                padding-left: 1rem;
+            }
+        }
+        .woocommerce-MyAccount-navigation {
+                ul {
+                    li {
+                        width: 200px;
+                        border-bottom: 1px solid lightgray;
+                        padding: 1rem 2rem;
+                        a {
+                            text-decoration: none;
+                            color: $color-darkgray;
+                            &:hover {
+                                color: purple;
+                            }
+                        }
+                    }
+                }   
+            }
+        .woocommerce-MyAccount-navigation-link .woocommerce-MyAccount-navigation-link--orders .is-active {
+            color: tomato;
+        }
+        .woocommerce-MyAccount-content {
+            a {
+                text-decoration: underline;
+                color: purple;
+            }
+            input {
+                background-color: rgb(238, 237, 237);
+                height: 50px;
+                padding-left: 1rem;
+            }
+            button {
+                @include pink_btn
+            }
+        }
+    }
+    .woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+        @include pink_btn
+    }
+    .woocommerce form .form-row label {
+        font-size: 1rem;
+        input {
+            
+        }
+
+    }
+}

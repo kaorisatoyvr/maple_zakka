@@ -1,0 +1,70 @@
+footer {
+    h2 {
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+    .brand img {
+        width: 100px;
+        margin-top: 2rem;
+    }
+}
+
+footer.content-info {
+    background-color: #F7E9CE;
+    padding: 2rem;
+}
+
+
+.footer_social_media {
+    ul {
+        display: flex;
+        svg {
+           width: 30px;
+           fill: $color-darkgray;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+// go to top button
+#goToTopBtn {
+    position: fixed;
+    padding: 3px;
+    width: 2rem;
+    bottom: 60px;
+    right: 20px;
+    background-color: #e9c3b7d0;
+    color: #333333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    z-index: 9999;
+}
+
+.fa-solid, .fas {
+    font-size: 1.25rem;
+    color: white;
+}
+
+#goToTopBtn i {
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    #goToTopBtn {
+        padding: 10px;
+        width: 3rem;
+        bottom: 20px;
+        right: 20px;
+    }
+    .fa-solid, .fas {
+        font-size: 1.5rem;
+    }
+}

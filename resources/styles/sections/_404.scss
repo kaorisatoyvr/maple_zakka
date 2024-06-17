@@ -1,0 +1,18 @@
+.search-404 {
+    input {
+        background-color: lightgray;
+        color: white;
+        width: 300px;
+        height: 30px;
+        padding: 1rem;
+        border: solid 1px darkgray;
+        border-radius: 2px;
+    }   
+    button {
+        width: fit;
+        padding: .25rem 1rem;
+        color: white;
+        background-color: $color-darkgray;
+        border-radius: 9999px;
+    }
+}
